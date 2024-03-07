@@ -2,7 +2,7 @@
 
 ## Background
 
-I analyze consumer brand perception survey data for popular consumer electronic device brands. 
+I analyze consumer brand perception survey data (consumer electronics_brand_ratings_updated.csv) for popular consumer electronic device brands. 
 
 ![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/215345cc-df5e-47ed-8423-bfb314b72121)
 
