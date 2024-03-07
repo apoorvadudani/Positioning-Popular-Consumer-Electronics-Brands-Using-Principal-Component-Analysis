@@ -93,6 +93,6 @@ How do we find out how to position there? Let’s assume that the gap reflects a
 
 <img width="590" alt="Screenshot 2024-03-06 at 10 17 59 PM" src="https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/03b4b1bc-7639-4bb1-8bcd-31b0bf6882b5">
 
-This suggests that brand Epson could target the gap by increasing its emphasis on perfor- mance while reducing emphasis on “latest” and “fun.”
+This suggests that brand Epson could target the gap by increasing its emphasis on performance while reducing emphasis on “latest” and “fun.”
 
 
