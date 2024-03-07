@@ -1,4 +1,4 @@
-# Consumer-Electronics-Principal-Component-Analysis-
+# Positioning-Popular-Consumer-Electronics-Brands-Using-Principal-Component-Analysis
 
 ## Background
 
