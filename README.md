@@ -6,4 +6,4 @@
 
 ## Perceptual map
 
-![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/d7781135-7e91-4c65-b4f8-7f8235ff08fa)
+![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/dec52a90-f12f-4e6f-b27c-3590c3ea097b)
