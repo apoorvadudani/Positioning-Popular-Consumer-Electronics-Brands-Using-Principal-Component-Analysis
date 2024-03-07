@@ -16,7 +16,7 @@ In this dataset, an observation is one respondent’s rating of a brand on one o
 
 Such ratings are collected for all the combinations of adjectives and brands of interest.
 
-The data here comprise simulated ratings of 10 brands on 9 adjectives (“performance,” “leader,” “latest,” “fun,” and so forth), for N = 100 simulated respondents. 
+The multidimensional data here comprise simulated ratings of 10 brands on 9 adjectives (“performance,” “leader,” “latest,” “fun,” and so forth), for N = 100 simulated respondents. 
 
 <img width="553" alt="Screenshot 2024-03-06 at 7 50 50 PM" src="https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/e054863f-59cd-4e7f-9f81-c232a3adc3bf">
 
@@ -71,11 +71,28 @@ I can select how many components out of the 9 to focus on using a scree plot, wh
 
 ## Findings
 
-A biplot of the PCA solution for the mean ratings gives an interpretable perceptual map, showing where the brands are placed with respect to the first two principal components:
+A biplot of the PCA solution for the mean ratings gives an interpretable correspondence map, showing where the brands are placed with respect to the first two principal components:
 
 ![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/dec52a90-f12f-4e6f-b27c-3590c3ea097b)
 
-PC1 might be capturing attributes related to the practical and performance side of the brands (as "perform" points in that direction), while PC2 might be capturing more emotive or experiential attributes (since "fun" and "trendy" have significant loadings on PC2).
+The actual names or the specific meanings of PC1 and PC2 are not directly provided in the biplot and these components are new super-attributes that are created by combining the original attributes in specific ways. They are mathematical constructs that capture certain variances and are defined by their loadings on the original variables (the brand attributes). The 'loadings' are the correlations or connections each original variable (like "fun," "perform," etc.) has with a given component. They tell us how much a change in the original variable would move the component. A high loading means that attribute strongly influences the PC, while a low loading means it has less influence.
+
+- PC1 (Horizontal Axis): This principal component captures the largest variance in the dataset. This dimension likely captures perceptions related to price, value, or affordability. Brands on the left like LG and Sony are associated with "value" and "bargain", while premium brands like Bose, Canon, and Apple are on the right side.
+
+- PC2 (Vertical Axis): The second principal component often captures variance not accounted for by the first. This dimension seems to represent perceptions around innovation, trendiness, or performance quality. Brands higher up like Bose, Canon, and Apple are labeled as "serious/leader", "trendy", and "latest", suggesting high-performance or cutting-edge attributes. Lower brands like JBL and Asus are aligned with "fun", potentially implying a focus on excitement, customer experience, entertainment or casual use cases.
+
+This information matters because it simplifies complex data into a few key 'themes'. Instead of juggling dozens of individual attributes, you can concentrate on a few big-picture components. It makes analysis and decision-making more focused and manageable.
+
+Dell and Epson are positioned near the center, suggesting a more neutral or mainstream perception.
 
 ## Recommendations
+
+Epson's goal to be a safe brand that appeals to many consumers meant that its relatively undifferentiated position was desirable sp far. However, the new CMO wishes the brand to have a strong, differentiated space where no brand is positioned. In the correspondence map, there is a large gap between the group Sony/LG on the bottom of the chart, versus Bose/Canon on the upper left. This area might be described as the “value leader” area or similar.
+
+How do we find out how to position there? Let’s assume that the gap reflects approximately the average of those four brands. We can find that average using colMeans() on the brands’ rows, and then take the difference of Epson from that average:
+
+<img width="590" alt="Screenshot 2024-03-06 at 10 17 59 PM" src="https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/03b4b1bc-7639-4bb1-8bcd-31b0bf6882b5">
+
+This suggests that brand Epson could target the gap by increasing its emphasis on perfor- mance while reducing emphasis on “latest” and “fun.”
+
 
