@@ -2,11 +2,13 @@
 
 ## Background
 
-I analyze consumer brand perception survey data for popular consumer electronic device brands. This data reflects consumer ratings of brands with regard to perceptual adjectives as expressed on survey items with the following form:
+I analyze consumer brand perception survey data for popular consumer electronic device brands. 
+
+![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/215345cc-df5e-47ed-8423-bfb314b72121)
+
+This data reflects consumer ratings of brands with regard to perceptual adjectives as expressed on survey items with the following form:
 
 On a scale from 1 to 10—where 1 is least and 10 is most—how [ADJECTIVE] is [BRAND A]?
-
-
 
 In this dataset, an observation is one respondent’s rating of a brand on one of the adjectives. Two such items might be:
 1. How trendy is Sony?
@@ -32,7 +34,6 @@ The plot suggests the following:
 
 - Smaller circles or those closer to white suggest little to no correlation between those attributes, indicating that they are perceived independently of one another.
 
-
 ## Aggregate Mean Ratings by Brand
 
 What is the average (mean) position of the brand on each adjective? To answer this, I first gather all data for each brand and calculate the average. Using our tools to paint a heatmap, which shows how similar or different brands compare on various attributes. Some brands are strongly associated with certain attributes. For example, dark blue indicates a strong positive association, and a brand with dark blue in "perform" is seen as high performing.
@@ -52,8 +53,27 @@ For each brand, these are the perceptions:
 - Asus - balances performance with value, also trendy in the gaming community.
 - JBL - provides fun and trendy audio products with good performance.
 
+Sony and LG have high ratings for "rebuy" and "value" but score low on "latest" and "fun". This could indicate that while customers are loyal and see value in these brands, they may not view them as the most cutting-edge or entertaining compared to others. This could suggest a strategy focused on highlighting new innovations and features in their latest products to shift consumer perception towards seeing Sony and LG as more contemporary and exciting brands.
+
+Bose and Canon share similarities in certain attributes. They could possibly be perceived well in terms of quality or reliability but might need to work on other aspects such as being viewed as budget-friendly or innovative.
+
+Apple, HP and Dell are typically strong brands, often perceived as leaders in innovation and quality. Grouped together, it suggests they share a strong market perception across several attributes. They should continue to leverage their strengths in marketing strategies.
+
+Asus and JBL are paired for attributes like "fun" and "bargain", which might imply that consumers see these brands as offering enjoyable products at a good price point. This pairing could suggest a strategy focused on marketing products that bring enjoyment to consumers at a competitive price.
+
+## Principal Component Analysis
+
+Scatterplot of correlated data with discrete values:
+
+![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/7ae5076a-5fbe-4fcf-9d52-52a64a982265)
+
+A biplot() of a principal component analysis solution for the simple, constructed example, showing data points plotted on the first two components:
+
+![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/8269c38e-0427-478b-ac12-61f95bed7494)
 
 
 ## Perceptual map
+
+
 
 ![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/dec52a90-f12f-4e6f-b27c-3590c3ea097b)
