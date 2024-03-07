@@ -61,19 +61,21 @@ Apple, HP and Dell are typically strong brands, often perceived as leaders in in
 
 Asus and JBL are paired for attributes like "fun" and "bargain", which might imply that consumers see these brands as offering enjoyable products at a good price point. This pairing could suggest a strategy focused on marketing products that bring enjoyment to consumers at a competitive price.
 
-## Principal Component Analysis
+## Principal Component Analysis (PCA)
 
-Scatterplot of correlated data with discrete values:
+PCA helps make things simpler by finding out which parts of your data tell you the most about the whole set without having to look at every little piece. When you compare several brands across many dimensions, it can be helpful to focus on just the first two or three principal components that explain variation in the data. I find the components with the PCA function prcomp().
 
-![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/7ae5076a-5fbe-4fcf-9d52-52a64a982265)
+I can select how many components out of the 9 to focus on using a scree plot, which shows how much variation in the data is explained by each principal component. A scree plot is often interpreted as indicating where additional components are not worth the complexity; this occurs where the line has an elbow, a kink in the angle of bending where the graph stops dropping off sharply and starts to flatten out. This is a somewhat subjective determination, and in this case we consider it to be around the second or third component:
 
-A biplot() of a principal component analysis solution for the simple, constructed example, showing data points plotted on the first two components:
+![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/bf768579-c4d7-4b48-aef7-9474e4ff7269)
 
-![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/8269c38e-0427-478b-ac12-61f95bed7494)
+## Findings
 
-
-## Perceptual map
-
-
+A biplot of the PCA solution for the mean ratings gives an interpretable perceptual map, showing where the brands are placed with respect to the first two principal components:
 
 ![image](https://github.com/apoorvadudani/Principal-Component-Analysis-/assets/113878059/dec52a90-f12f-4e6f-b27c-3590c3ea097b)
+
+PC1 might be capturing attributes related to the practical and performance side of the brands (as "perform" points in that direction), while PC2 might be capturing more emotive or experiential attributes (since "fun" and "trendy" have significant loadings on PC2).
+
+## Recommendations
+
